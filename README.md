@@ -65,7 +65,7 @@ Short description of each Package with its classes inside:
 
 # Architecture
 The image below illustrates the main architecture of the developed Answering Machine tool.
-![alt tag](https://github.com/dimcey/IP-answeringMachine-usingGstreamer/blob/master/Architecture.jpg)
+![alt tag](https://github.com/dimcey/IP-answeringMachine-usingGstreamer/blob/master/architecture.png)
 The classes and packages dependencies have been thought to enable a clear development, to facilitate the reusability of our solution and to bring high scalability. Guided from the development of the first lab, the produced GUI is also loosely coupled with the SIP functionalities such as the SIP and ProcessCall classes, and the Gstreamer operations, so that if an end user wants to develop his own GUIs, only an object is needed to be created from the mentioned classes and all of the Client’s functionalities would become available for the end user.
 
 Once the Main class is started it will initialize the GUI and the SIP class, which are two separate parts of the whole project as seen in the figure above. Initializing the SIP class will start the creation of SIP server on a static IP address which in our case is the developer’s own private NAT address.  Using java sip and sdp libraries the SIP class is handling the requests that are coming to the already created SIP server such as INVITE, BYE and CANCEL, which are explained in the next section. 
